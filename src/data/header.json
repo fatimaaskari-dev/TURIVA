@@ -1,0 +1,34 @@
+
+{
+  "brand": {
+    "letter": "T",
+    "name": "TURIVA",
+    "link": "#home"
+  },
+  "navigation": [
+    {
+      "text": "HOME PAGE",
+      "href": "#home"
+    },
+    {
+      "text": "ABOUT US",
+      "href": "#about"
+    },
+    {
+      "text": "PRODUCTS",
+      "href": "#destinations"
+    },
+    {
+      "text": "DOWNLOAD",
+      "href": "#newsletter"
+    },
+    {
+      "text": "BLOGS",
+      "href": "#reviews"
+    },
+    {
+      "text": "CONTACT US",
+      "href": "#contact"
+    }
+  ]
+}

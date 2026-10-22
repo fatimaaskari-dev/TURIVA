@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURIVA</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header id="home" class="w-full">
+        <div class="bg-gray-500/20">
+            <div class="flex items-center justify-between md:gap-5 py-4 mx-3 md:mx-7.5 lg:py-3 lg:mx-30">
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"
+                    class="menu-Btn flex md:hidden h-11 w-11 items-center justify-center rounded-full text-gray-600 transition hover:bg-gray-100 hover:text-blue-600">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+
+                <!-- Logo -->
+                <a href="#home" id="brand-link" class="flex items-center gap-2">
+                    <div id="brand-letter"
+                        class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-xl font-bold text-white">
+                        T
+                    </div>
+                    <span id="brand-name" class="text-2xl font-bold tracking-wide text-gray-900">
+                        TURIVA
+                    </span>
+                </a>
+
+                <!-- Search -->
+                <div class="hidden md:flex gap-2 max-w-md items-center justify-start h-12 w-full rounded-full border border-gray-200 bg-gray-50 px-5 text-sm text-gray-700 transition
+                focus-within:border-blue-500
+                focus-within:bg-white
+                focus-within:shadow-md">
+                    <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                    <input type="search" placeholder="Search destinations, hotels..."
+                        aria-label="Search destinations and hotels"
+                        class="border-none outline-none w-full bg-transparent">
+                </div>
+
+                <!-- Right Icons -->
+                <div class="flex items-center lg:gap-3">
+
+                    <!-- Profile -->
+                    <button type="button" aria-label="Profile"
+                        class="hidden cursor-pointer h-11 w-11 items-center justify-center rounded-full text-gray-600 transition hover:bg-gray-100 hover:text-blue-600 md:flex">
+                        <i class="fa-regular fa-user text-lg"></i>
+                    </button>
+
+                    <!-- Call -->
+                    <button type="button" aria-label="Call"
+                        class="hidden cursor-pointer h-11 w-11 items-center justify-center rounded-full text-gray-600 transition hover:bg-gray-100 hover:text-blue-600 md:flex">
+                        <i class="fa-solid fa-phone text-lg"></i>
+                    </button>
+
+                    <!-- Notification -->
+                    <button type="button" aria-label="Notifications"
+                        class="relative cursor-pointer flex h-11 w-11 items-center justify-center rounded-full text-gray-600 transition hover:bg-gray-100 hover:text-blue-600">
+                        <i class="fa-regular fa-bell text-lg"></i>
+                        <span class="absolute right-1 top-1 h-2.5 w-2.5 rounded-full bg-red-500"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="hidden md:block">
+            <ul id="desktop-nav"
+                class="flex md:px-7.5 md:py-6 lg:my-13.25 lg:px-30 py-6 justify-between font-medium text-center text-xl leading-7.5">
+            </ul>
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu"
+            class="mobile-Menu hidden w-full border-t border-gray-200 bg-gray-100 px-6 py-6 md:hidden">
+
+            <nav>
+                <ul id="mobile-nav" class="flex flex-col gap-5 font-medium text-lg">
+                </ul>
+            </nav>
+
+            <!-- Mobile Profile & Call -->
+            <div class="mt-6 flex flex-col gap-3 border-t border-gray-200 pt-5">
+
+                <button type="button"
+                    class="flex items-center gap-3 rounded-lg px-3 py-3 text-gray-600 transition hover:bg-blue-100 hover:text-blue-600">
+                    <i class="fa-regular fa-user text-lg"></i>
+                    <span>Profile</span>
+                </button>
+
+                <button type="button"
+                    class="flex items-center gap-3 rounded-lg px-3 py-3 text-gray-600 transition hover:bg-blue-100 hover:text-blue-600">
+                    <i class="fa-solid fa-phone text-lg"></i>
+                    <span>Call</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- =========================================================
+             HERO SLIDER
+        ========================================================== -->
+        <section class="bg-gray-300/20">
+
+            <div class="flex items-center justify-between gap-4 p-4 lg:py-12 lg:mx-30 md:py-6 md:mx-7.5">
+
+                <!-- Previous -->
+                <button type="button" class="heroPrev shrink-0 cursor-pointer">
+
+                    <span
+                        class="flex h-7 w-7 items-center justify-center rounded-full bg-black p-1.5 sm:h-8 sm:w-8 md:h-10 md:w-10 md:p-3">
+
+                        <i class="fa-solid fa-arrow-left text-xs text-white sm:text-sm md:text-xl"></i>
+
+                    </span>
+
+                </button>
+
+                <!-- Slider -->
+                <div class="heroTrack relative h-74 w-[70%] shrink-0 overflow-hidden rounded-xl lg::w-[785.25px]">
+
+                    <!-- Slides generated by JavaScript -->
+                    <div class="heroSlides"></div>
+
+                    <!-- Dots -->
+                    <div class="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2 heroDots"></div>
+
+                </div>
+
+                <!-- Next -->
+                <button type="button" class="heroNext shrink-0 cursor-pointer">
+
+                    <span
+                        class="flex h-7 w-7 items-center justify-center rounded-full bg-black p-1.5 sm:h-8 sm:w-8 md:h-10 md:w-10 md:p-3">
+
+                        <i class="fa-solid fa-arrow-right text-xs text-white sm:text-sm md:text-xl"></i>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             POPULAR DESTINATIONS
+        ====================================================== -->
+
+
+        <section id="destinations">
+            <div class="m-4 md:my-8 md:ml-7.5 md:mr-0 lg:mx-30 lg:my-13.25 flex flex-col gap-4 md:gap-12">
+
+                <!-- Heading -->
+                <div class="flex flex-col items-center justify-center gap-3 md:gap-4 text-center">
+
+                    <h2
+                        class="text-2xl font-medium md:font-semibold lg:font-bold leading-9 text-gray-900 md:text-3xl lg:text-4xl">
+                        DISCOVER YOUR NEXT DESTINATION
+                    </h2>
+
+                    <p class="mx-auto max-w-2xl text-base leading-7 text-gray-500">
+                        Find beautiful destinations and plan your next unforgettable trip.
+                    </p>
+
+                </div>
+
+                <!-- Destination Cards -->
+                <div class="popularViewport overflow-hidden">
+                    <div class="popular-track flex items-center gap-8 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex items-center justify-between">
+
+                    <div class="flex items-center gap-3">
+
+                        <button type="button"
+                            class="popular-prev cursor-pointer flex h-7 w-7 items-center justify-center rounded-full bg-black p-1.5 sm:h-8 sm:w-8 md:h-10 md:w-10 md:p-3"
+                            aria-label="Previous destination">
+
+                            <i class="fa-solid fa-arrow-left text-xs text-white sm:text-sm md:text-xl"></i>
+                        </button>
+
+                        <button type="button"
+                            class="popular-next cursor-pointer flex h-7 w-7 items-center justify-center rounded-full bg-black p-1.5 sm:h-8 sm:w-8 md:h-10 md:w-10 md:p-3"
+                            aria-label="Next destination">
+
+                            <i class="fa-solid fa-arrow-right text-xs text-white sm:text-sm md:text-xl"></i>
+                        </button>
+
+                    </div>
+
+                    <a href="#places"
+                        class="flex items-center gap-2 text-sm font-semibold text-gray-900 transition hover:text-gray-500">
+
+                        EXPLORE MORE
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             TOP DESTINATIONS
+        ====================================================== -->
+
+
+
+        <section id="places" class="md:bg-gray-300/20">
+
+            <div class="lg:mx-30 flex flex-col gap-4 p-4 md:mx-7.5 md:my-9 md:gap-12">
+
+                <!-- Heading -->
+                <div class="flex flex-col items-center justify-center gap-3 text-center">
+
+                    <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
+                        Top Destinations
+                    </p>
+
+                    <h2 class="text-2xl font-semibold text-gray-900 md:text-3xl lg:text-4xl lg:font-bold">
+                        Explore the World's Most Beautiful Places
+                    </h2>
+
+                    <p class="mx-auto max-w-2xl text-base leading-7 text-gray-500">
+                        Discover amazing destinations, comfortable stays, and unforgettable experiences for your next
+                        journey.
+                    </p>
+
+                </div>
+
+                <!-- Slider -->
+                <div class="topViewport overflow-hidden">
+
+                    <div class="topTrack flex items-center gap-5 transition-transform duration-500">
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <div>
+
+                    <div class="flex items-center justify-between gap-4 md:gap-0">
+
+                        <div class="flex gap-2 md:gap-3">
+
+                            <button type="button"
+                                class="topPrev flex h-10 w-8 cursor-pointer items-center justify-center rounded-lg border border-gray-300 transition hover:bg-gray-100 md:h-11 md:w-11">
+
+                                <i class="fa-solid fa-arrow-left text-sm md:text-xl"></i>
+
+                            </button>
+
+                            <button type="button"
+                                class="topNext flex h-10 w-8 cursor-pointer items-center justify-center rounded-lg border border-gray-300 transition hover:bg-gray-100 md:h-11 md:w-11">
+
+                                <i class="fa-solid fa-arrow-right text-sm md:text-xl"></i>
+
+                            </button>
+
+                        </div>
+
+                        <a href="#destinations"
+                            class="text-sm text-gray-900 transition hover:text-gray-500 md:font-semibold">
+
+                            VIEW ALL DESTINATIONS
+
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =====================================================
+             REVIEWS
+        ====================================================== -->
+
+
+        <section id="reviews" class="py-4 px-4 md:mx-7.5 md:my-9 lg:my-13.25 lg:mx-30 bg-gray-200/50 md:bg-white">
+
+            <div class="flex flex-col md:gap-12">
+
+                <!-- Heading -->
+                <div class="hidden md:flex flex-col items-center justify-center gap-4">
+
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                        Our Travelers
+                    </p>
+
+                    <h2 class="font-bold text-gray-900 md:text-4xl lg:text-5xl leading-13.75">
+                        What Our Travelers Say
+                    </h2>
+
+                    <p class="mx-auto max-w-2xl text-base leading-7 text-gray-500">
+                        Read the experiences and stories of travelers who explored the world with us.
+                    </p>
+
+                </div>
+
+                <div class="flex items-center justify-between gap-4">
+
+                    <!-- Previous Button -->
+                    <div>
+                        <button type="button"
+                            class="reviewPrev cursor-pointer flex h-11 w-11 items-center justify-center rounded-full border border-gray-300 text-gray-700 transition hover:bg-gray-100">
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                        </button>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="reviewViewpot flex-1 min-w-0">
+
+                        <div class="reviewTrack grid">
+                        </div>
+
+                    </div>
+
+                    <!-- Next Button -->
+                    <div>
+                        <button type="button"
+                            class="reviewNext cursor-pointer flex h-11 w-11 items-center justify-center rounded-full border border-gray-300 text-gray-700 transition hover:bg-gray-100">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GALLERY
+        ====================================================== -->
+
+
+
+        <section id="gallery">
+            <div class="md:bg-gray-200/50">
+                <div
+                    class="flex flex-col gap-3 md:gap-6 lg:gap-13.25 mx-4 my-6 py-6 md:py-8 md:mx-7.5 md:my-8 lg:py-16 lg:mx-30 lg:my-13.25">
+
+                    <div class="flex flex-col items-center justify-center gap-2 md:gap-4 text-center">
+
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                            Travel Gallery
+                        </p>
+
+                        <h2
+                            class="text-2xl font-medium md:font-semibold lg:font-bold leading-9 text-gray-900 md:text-3xl lg:text-4xl">
+                            Explore the World
+                        </h2>
+
+                        <p class="mx-auto max-w-2xl text-base leading-7 text-gray-500">
+                            Discover beautiful destinations and unforgettable moments from around the world.
+                        </p>
+
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="overflow-hidden">
+                        <div class="gallery-track flex w-max gap-4">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- =====================================================
+             ABOUT TURIVA
+        ====================================================== -->
+
+
+        <section id="about" class="">
+            <div class="grid items-center gap-12 lg:grid-cols-2 mx-4 my-6 md:mx-7.5 md:my-8 lg:mx-30 lg:my-13.25">
+
+                <!-- Left -->
+
+                <div class="max-w-xl">
+
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                        TRAVEL WITH TURIVA
+                    </p>
+
+                    <h2 class="mt-3 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
+                        TURIVA
+                    </h2>
+
+                    <p class="mt-6 max-w-lg text-base leading-7 text-gray-500">
+                        Discover new destinations, find comfortable stays, and experience unforgettable journeys
+                        with TURIVA. We make it easier to explore beautiful places and plan your next trip.
+                    </p>
+
+                    <a href="#contact"
+                        class="mt-8 inline-block rounded-lg bg-black px-7 py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
+                        READ MORE
+                    </a>
+
+                </div>
+
+                <!-- Right -->
+
+                <div class="relative">
+
+                    <div class="aboutTrack h-37.5 md:h-93.75 w-full overflow-hidden rounded-2xl bg-gray-200">
+
+                        <img src="./images/Paris-3.jpg" alt="Travel destination" class="h-full w-full object-cover">
+
+                    </div>
+
+                    <!-- Controls -->
+
+                    <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4">
+
+                        <button type="button" aria-label="Previous slide"
+                            class="aboutPrev cursor-pointer flex h-11 w-11 items-center justify-center rounded-full bg-white text-gray-900 shadow-md transition hover:bg-gray-100">
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                        </button>
+
+                        <button type="button" aria-label="Next slide"
+                            class="aboutNext cursor-pointer flex h-11 w-11 items-center justify-center rounded-full bg-white text-gray-900 shadow-md transition hover:bg-gray-100">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- =====================================================
+             NEWSLETTER
+        ====================================================== -->
+
+        <section id="newsletter" class="bg-gray-200/50 py-6 md:py-8 lg:py-16">
+
+            <div
+                class="mx-4 my-6 md:mx-7.5 md:my-8 lg:mx-30 lg:my-13.25 text-center flex flex-col items-center justify-center gap-2 md:gap-12">
+
+                <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+
+                    Stay Connected with TURIVA
+
+                </h2>
+
+                <p class="max-w-xl text-base leading-7 text-gray-500">
+
+                    Subscribe to our newsletter and get the latest travel deals, destination ideas, and exciting travel
+                    updates.
+
+                </p>
+
+
+                <form id="newsletter-form"
+                    class="flex w-full max-w-xl flex-col items-center gap-3.5 md:flex-row md:gap-13.25">
+
+                    <input id="newsletter-email" type="email" required placeholder="Enter your email address"
+                        autocomplete="email"
+                        class="h-15.25 w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-gray-900 md:w-79.25">
+
+                    <button type="submit"
+                        class="cursor-pointer h-15.25 shrink-0 rounded-lg bg-black px-7 text-sm font-semibold text-white transition hover:bg-gray-800 w-41.25">
+                        SUBSCRIBE
+                    </button>
+                </form>
+
+                <p id="newsletter-message" class="text-sm" aria-live="polite"></p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             INFO CARDS
+        ====================================================== -->
+
+        <section class="">
+
+            <div class="mx-4 my-6 md:mx-7.5 md:my-8 lg:mx-30 lg:my-13.25">
+
+                <div class="grid gap-8 md:grid-cols-2">
+
+                    <!-- Card 1 -->
+
+                    <article class="rounded-2xl border border-gray-200 p-8 md:p-10">
+
+                        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+
+                            Discover New Destinations
+
+                        </h2>
+
+                        <p class="mt-4 max-w-lg text-base leading-7 text-gray-500">
+
+                            Explore beautiful destinations, discover unique places, and find inspiration for your next
+                            unforgettable journey.
+
+                        </p>
+
+                        <a href="#places"
+                            class="mt-7 inline-block rounded-lg bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
+
+                            READ MORE
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- Card 2 -->
+
+                    <article class="rounded-2xl border border-gray-200 p-8 md:p-10">
+
+                        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+
+                            Plan Your Perfect Trip
+
+                        </h2>
+
+                        <p class="mt-4 max-w-lg text-base leading-7 text-gray-500">
+
+                            Find comfortable stays, explore exciting experiences, and plan every part of your next trip
+                            with TURIVA.
+
+                        </p>
+
+                        <a href="#contact"
+                            class="mt-7 inline-block rounded-lg bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
+
+                            READ MORE
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section id="contact" class="hidden md:block bg-gray-200/50">
+
+            <div class="max-w-7xl mx-4 my-6 md:mx-7.5 md:my-8 lg:mx-30 lg:my-13.25 py-6 md:py-8 lg:py-16">
+
+                <!-- Heading -->
+
+                <div class="mx-auto max-w-2xl text-center">
+
+                    <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+
+                        Plan Your Next Journey
+
+                    </h2>
+
+                    <p class="mt-4 text-base leading-7 text-gray-500">
+
+                        Tell us about your travel plans and let TURIVA help you create an unforgettable experience.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Content -->
+
+                <div class="mt-12 grid items-start gap-12 lg:grid-cols-2">
+
+                    <!-- Image -->
+
+                    <div class="flex items-start justify-center">
+
+                        <img src="./images/Cappadocia.jpg" alt="Travel destination"
+                            class="h-75 w-full max-w-xl rounded-2xl object-cover">
+
+                    </div>
+
+
+                    <!-- Form -->
+
+                    <form class="contactForm w-full">
+
+                        <input type="text" name="firstname" required placeholder="First Name"
+                            class="h-12 w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-gray-900">
+
+
+                        <input type="text" name="lastname" required placeholder="Last Name"
+                            class="mt-4 h-12 w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-gray-900">
+
+
+                        <input type="email" name="email" required placeholder="Email"
+                            class="mt-4 h-12 w-full rounded-lg border border-gray-300 px-4 text-sm outline-none transition focus:border-gray-900">
+
+
+                        <!-- Checkboxes / Radios -->
+
+                        <div class="mt-6 grid grid-cols-2 gap-6">
+
+                            <!-- Interests -->
+
+                            <div class="space-y-3">
+
+                                <label class="flex items-center gap-3 text-sm text-gray-600">
+
+                                    <input type="checkbox" name="interest" value="hotels" class="h-4 w-4">
+
+                                    Hotels
+
+                                </label>
+
+
+                                <label class="flex items-center gap-3 text-sm text-gray-600">
+
+                                    <input type="checkbox" name="interest" value="flights" class="h-4 w-4">
+
+                                    Flights
+
+                                </label>
+
+
+                                <label class="flex items-center gap-3 text-sm text-gray-600">
+
+                                    <input type="checkbox" name="interest" value="tours" class="h-4 w-4">
+
+                                    Tours
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- Travel Type -->
+
+                            <div class="space-y-3">
+
+                                <label class="flex items-center gap-3 text-sm text-gray-600">
+
+                                    <input type="radio" name="travel-type" value="solo" class="h-4 w-4">
+
+                                    Solo Travel
+
+                                </label>
+
+
+                                <label class="flex items-center gap-3 text-sm text-gray-600">
+
+                                    <input type="radio" name="travel-type" value="family" class="h-4 w-4">
+
+                                    Family Travel
+
+                                </label>
+
+
+                                <label class="flex items-center gap-3 text-sm text-gray-600">
+
+                                    <input type="radio" name="travel-type" value="group" class="h-4 w-4">
+
+                                    Group Travel
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Message -->
+
+                        <textarea name="message" rows="5" required placeholder="Write your message..."
+                            class="mt-6 w-full resize-none rounded-lg border border-gray-300 p-4 text-sm outline-none transition focus:border-gray-900"></textarea>
+
+
+                        <!-- Buttons -->
+
+                        <div class="mt-6 flex items-center gap-3">
+
+                            <button type="button"
+                                class="contactNext cursor-pointer rounded-lg border border-gray-300 px-7 py-3 text-sm font-semibold text-gray-900 transition hover:bg-gray-100">
+
+                                NEXT
+
+                            </button>
+
+                            <button type="submit"
+                                class="contactSubmit cursor-pointer rounded-lg bg-black px-7 py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
+
+                                SUBMIT
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="w-full border-t border-gray-200 bg-white md:border-none">
+
+        <div class="max-w-7xl mx-4 my-6 md:mx-7.5 md:my-8 lg:mx-30 lg:my-13.25 py-6 md:py-8 lg:py-16">
+
+            <!-- Logo -->
+
+            <div class="flex justify-center">
+
+                <a href="#home" class="text-3xl font-bold tracking-wide text-gray-900">
+
+                    TURIVA
+
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="mt-8">
+
+                <ul
+                    class="flex flex-col md:flex-row items-center justify-center gap-x-8 gap-y-4 text-sm font-medium text-gray-600">
+
+                    <li>
+                        <a href="#home" class="transition hover:text-black">
+                            HOME PAGE
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="transition hover:text-black">
+                            ABOUT US
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#destinations" class="transition hover:text-black">
+                            PRODUCTS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#newsletter" class="transition hover:text-black">
+                            DOWNLOAD
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reviews" class="transition hover:text-black">
+                            BLOGS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="transition hover:text-black">
+                            CONTACT US
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Bottom -->
+
+            <div
+                class="mt-10 flex flex-col items-center justify-between gap-5 border-t border-gray-200 pt-6 md:flex-row">
+
+                <!-- Social -->
+
+                <div class="flex items-center gap-6 text-gray-600">
+
+                    <a href="#" aria-label="Facebook" class="text-lg transition hover:text-black">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="Instagram" class="text-lg transition hover:text-black">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="YouTube" class="text-lg transition hover:text-black">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Copyright -->
+
+                <p class="text-center text-sm text-gray-500 md:text-right">
+
+                    Copyright © 2024 | Designed by MATIS SAEIDI
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

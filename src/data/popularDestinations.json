@@ -1,0 +1,117 @@
+
+{
+  "destinations": [
+    {
+      "id": 1,
+      "name": "TEHRAN",
+      "image": "./images/Iran-2.jpg",
+      "alt": "Tehran",
+      "rating": 5,
+      "description": "Discover the rich history, culture, and vibrant life of Tehran.",
+      "oldPrice": "10,500$",
+      "price": "7,500$",
+      "date": "5 Days",
+      "transport": "Car",
+      "activity": "Swimming",
+      "food": "Local Food"
+    },
+    {
+      "id": 2,
+      "name": "ISTANBUL",
+      "image": "./images/Istanbul-4.jpg",
+      "alt": "Istanbul",
+      "rating": 4.5,
+      "description": "Explore historic streets, beautiful mosques, and the Bosphorus.",
+      "oldPrice": "9,500$",
+      "price": "6,500$",
+      "date": "4 Days",
+      "transport": "Car",
+      "activity": "Sightseeing",
+      "food": "Local Food"
+    },
+    {
+      "id": 3,
+      "name": "PARIS",
+      "image": "./images/Paris-2.jpg",
+      "alt": "Paris",
+      "rating": 4,
+      "description": "Enjoy romantic streets, famous landmarks, and French culture.",
+      "oldPrice": "12,000$",
+      "price": "8,500$",
+      "date": "6 Days",
+      "transport": "Car",
+      "activity": "Sightseeing",
+      "food": "Local Food"
+    },
+    {
+      "id": 4,
+      "name": "DUBAI",
+      "image": "./images/Dubai-1.jpg",
+      "alt": "Dubai",
+      "rating": 5,
+      "description": "Discover modern architecture, golden beaches, and desert adventures.",
+      "oldPrice": "11,000$",
+      "price": "7,900$",
+      "date": "5 Days",
+      "transport": "Car",
+      "activity": "Swimming",
+      "food": "Local Food"
+    },
+    {
+      "id": 5,
+      "name": "BALI",
+      "image": "./images/Bali-2.jpg",
+      "alt": "Bali",
+      "rating": 4.5,
+      "description": "Relax among tropical beaches, green landscapes, and island culture.",
+      "oldPrice": "13,000$",
+      "price": "9,000$",
+      "date": "7 Days",
+      "transport": "Car",
+      "activity": "Swimming",
+      "food": "Local Food"
+    },
+    {
+      "id": 6,
+      "name": "MALDIVES",
+      "image": "./images/Maldives-2.jpg",
+      "alt": "Maldives",
+      "rating": 5,
+      "description": "Experience turquoise waters, peaceful islands, and white sandy beaches.",
+      "oldPrice": "15,000$",
+      "price": "10,500$",
+      "date": "6 Days",
+      "transport": "Boat",
+      "activity": "Swimming",
+      "food": "Local Food"
+    },
+    {
+  "id": 7,
+  "name": "SANTORINI",
+  "image": "./images/Santorini-2.jpg",
+  "alt": "Santorini",
+  "rating": 4.5,
+  "description": "Explore whitewashed houses, blue-domed churches, and stunning Aegean Sea views.",
+  "oldPrice": "10,000$",
+  "price": "7,000$",
+  "date": "4 Days",
+  "transport": "Car",
+  "activity": "Sightseeing",
+  "food": "Local Food"
+},
+{
+  "id": 8,
+  "name": "SWITZERLAND",
+  "image": "./images/Switzerland-2.jpg",
+  "alt": "Switzerland",
+  "rating": 5,
+  "description": "Discover breathtaking Alpine mountains, crystal-clear lakes, and charming Swiss villages.",
+  "oldPrice": "8,500$",
+  "price": "5,900$",
+  "date": "5 Days",
+  "transport": "Car",
+  "activity": "Sightseeing",
+  "food": "Local Food"
+}
+  ]
+}

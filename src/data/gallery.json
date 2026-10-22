@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Bali",
+    "image": "./images/tanah-Lot-Temple-Bali.jpg",
+    "alt": "Bali",
+    "link": "#places"
+  },
+  {
+    "name": "Paris",
+    "image": "./images/Paris-4.jpg",
+    "alt": "Paris",
+    "link": "#places"
+  },
+  {
+    "name": "Santorini",
+    "image": "./images/Santorini-2.jpg",
+    "alt": "Santorini",
+    "link": "#places"
+  },
+  {
+    "name": "Istanbul",
+    "image": "./images/Istanbul-5.jpg",
+    "alt": "Istanbul",
+    "link": "#places"
+  },
+  {
+    "name": "Dubai",
+    "image": "./images/sights-of-dubai.jpg",
+    "alt": "Dubai",
+    "link": "#places"
+  },
+  {
+    "name": "Switzerland",
+    "image": "./images/Switzerland-waterfall.jpg",
+    "alt": "Switzerland",
+    "link": "#places"
+  },
+
+  {
+    "name": "Maldives",
+    "image": "./images/Maldives-8.jpg",
+    "alt": "Maldives islands",
+    "link": "#places"
+  }
+]

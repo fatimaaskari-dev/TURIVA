@@ -1,0 +1,57 @@
+
+{
+  "images": [
+    {
+      "src": "./images/Paris-3.jpg",
+      "alt": "Paris travel destination"
+    },
+    {
+      "src": "./images/Iran-4.jpg",
+      "alt": "Iran travel destination"
+    },
+    {
+      "src": "./images/Maldives-3.jpg",
+      "alt": "Maldives travel destination"
+    },
+    {
+      "src": "./images/Switzerland-4.jpg",
+      "alt": "Switzerland travel destination"
+    },
+    {
+      "src": "./images/Cappadocia.jpg",
+      "alt": "Cappadocia travel destination"
+    },
+    {
+      "src": "./images/Maldives-5.jpg",
+      "alt": "Maldives travel destination"
+    },
+    {
+      "src": "./images/Paris-5.jpg",
+      "alt": "Paris travel destination"
+    },
+    {
+      "src": "./images/Switzerland-3.jpg",
+      "alt": "Switzerland travel destination"
+    },
+    {
+      "src": "./images/Dobai.jpg",
+      "alt": "Dubai travel destination"
+    },
+    {
+      "src": "./images/Iran-6.jpg",
+      "alt": "Iran travel destination"
+    },
+    {
+      "src": "./images/Iran-3.jpg",
+      "alt": "Iran travel destination"
+    },
+    {
+      "src": "./images/Maldives-8.jpg",
+      "alt": "Maldives travel destination"
+    },
+    {
+      "src": "./images/Santorini-4.jpg",
+      "alt": "Santorini travel destination"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+
+[
+  {
+    "name": "Bali",
+    "location": "Bali, Indonesia",
+    "image": "./images/bali.jpg",
+    "rating": 5,
+    "link": "#contact"
+  },
+  {
+    "name": "Paris",
+    "location": "Paris, France",
+    "image": "./images/Paris-3.jpg",
+    "rating": 4.5,
+    "link": "#contact"
+  },
+  {
+    "name": "Santorini",
+    "location": "Santorini, Greece",
+    "image": "./images/Santorini-2.jpg",
+    "rating": 4,
+    "link": "#contact"
+  },
+  {
+    "name": "Istanbul",
+    "location": "Istanbul, Türkiye",
+    "image": "./images/Iran-5.jpg",
+    "rating": 4,
+    "link": "#contact"
+  },
+  {
+    "name": "Dubai",
+    "location": "Dubai, United Arab Emirates",
+    "image": "./images/Dubai-6 (1).jpg",
+    "rating": 3.5,
+    "link": "#contact"
+  },
+  {
+    "name": "Maldives",
+    "location": "Maldives, Indian Ocean",
+    "image": "./images/Maldives-4.jpg",
+    "rating": 5,
+    "link": "#contact"
+  },
+  {
+    "name": "Switzerland",
+    "location": "Switzerland, Europe",
+    "image": "./images/Switzerland-4.jpg",
+    "rating": 4.5,
+    "link": "#contact"
+  },
+  {
+    "name": "Maldives",
+    "location": "Maldives, Malé",
+    "image": "./images/Maldives-6.jpg",
+    "rating": 5,
+    "link": "#contact"
+  }
+]

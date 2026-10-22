@@ -1,0 +1,75 @@
+
+[
+  {
+    "id": 1,
+    "name": "Sarah Jahangir",
+    "image": "./images/Sarah-Johnson.jpg",
+    "rating": 4.5,
+    "date": "16.02.2023",
+    "destination": "TEHRAN",
+    "review": "An unforgettable journey with beautiful places, amazing experiences, and wonderful memories. Everything was perfectly organized from beginning to end."
+  },
+  {
+    "id": 2,
+    "name": "Emily Wilson",
+    "image": "./images/Emily-Wilson.jpg",
+    "rating": 3.5,
+    "date": "20.05.2023",
+    "destination": "MALDIVES",
+    "review": "The Maldives was absolutely beautiful. The clear water, peaceful beaches, and excellent service made our trip unforgettable."
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "image": "./images/Michael-Brown.jpg",
+    "rating": 4,
+    "date": "12.08.2023",
+    "destination": "SANTORINI",
+    "review": "Santorini was a dream come true. The views were breathtaking, and every detail of our journey was carefully planned."
+  },
+  {
+    "id": 4,
+    "name": "David Miller",
+    "image": "./images/David-Miller.jpg",
+    "rating": 5,
+    "date": "05.10.2023",
+    "destination": "SWITZERLAND",
+    "review": "Switzerland was incredible, with beautiful mountains, fresh air, and amazing scenery. We enjoyed every moment of our trip."
+  },
+  {
+    "id": 5,
+    "name": "Emily Habib",
+    "image": "./images/Emily-Dubai.jpg",
+    "rating": 5,
+    "date": "12.03.2023",
+    "destination": "DUBAI",
+    "review": "Dubai was an amazing destination with beautiful views, luxury experiences, and unforgettable memories. Everything was perfectly organized."
+  },
+  {
+    "id": 6,
+    "name": "Sophia Martinez",
+    "image": "./images/Sophia-Martinez.jpg",
+    "rating": 4,
+    "date": "25.04.2023",
+    "destination": "TURKEY",
+    "review": "Turkey offered a wonderful mix of culture, delicious food, and stunning scenery. It was a beautiful trip filled with special moments."
+  },
+  {
+    "id": 7,
+    "name": "Olivia Brown",
+    "image": "./images/Olivia-Brown.jpg",
+    "rating": 4.5,
+    "date": "08.06.2023",
+    "destination": "MALDIVES",
+    "review": "The Maldives was a dream come true, with crystal-clear water, peaceful beaches, and breathtaking sunsets. I loved every moment of this journey."
+  },
+  {
+    "id": 8,
+    "name": "Isabella Taylor",
+    "image": "./images/Isabella-Taylor.jpg",
+    "rating": 4,
+    "date": "05.10.2023",
+    "destination": "SWITZERLAND",
+    "review": "Paris was full of charm, beautiful architecture, and romantic streets. The whole experience was wonderful and created memories to treasure."
+  }
+]

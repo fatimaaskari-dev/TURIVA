@@ -1,0 +1,29 @@
+
+{
+  "slides": [
+    {
+      "image": "./images/Bali-2.jpg",
+      "alt": "Bali",
+      "title": "Explore Bali",
+      "description": "Discover beautiful places and unforgettable experiences.",
+      "buttonText": "EXPLORE NOW",
+      "buttonLink": "#destinations"
+    },
+    {
+      "image": "./images/Istanbul-5.jpg",
+      "alt": "Istanbul",
+      "title": "Discover Istanbul",
+      "description": "Explore the beauty of history and culture.",
+      "buttonText": "DISCOVER NOW",
+      "buttonLink": "#destinations"
+    },
+    {
+      "image": "./images/Cappadocia.jpg",
+      "alt": "Cappadocia",
+      "title": "Experience Cappadocia",
+      "description": "Experience an unforgettable journey.",
+      "buttonText": "BOOK YOUR TRIP",
+      "buttonLink": "#destinations"
+    }
+  ]
+}
